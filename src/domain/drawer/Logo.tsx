@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-
 import { makeStyles } from '@material-ui/core'
+import coloredLogo from "../../img/logoColored.png"
 
 export interface LogoProps {
 	invert?: boolean
@@ -11,8 +11,9 @@ export interface LogoProps {
 
 const useStyles = makeStyles(() => ({
 	logo: {
-		width: '100%',
-		padding: '10px',
+		width: '80%',
+		padding: '20px',
+		margin: '20px',
 	},
 }))
 
@@ -21,11 +22,7 @@ const Logo: FC<LogoProps> = () => {
 
 	return (
 		<Link to="/">
-			<img
-				src="https://placehold.it/100x20"
-				className={classes.logo}
-				alt="Logo"
-			/>
+			<img src={coloredLogo} className={classes.logo} alt="Logo" />
 		</Link>
 	)
 }

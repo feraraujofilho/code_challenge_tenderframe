@@ -46,7 +46,6 @@ const TemplateWelcome: FC<TemplateWelcomeProps> = ({
 	...rest
 }) => {
 	const classes = useStyles()
-
 	return (
 		<Route
 			{...rest}
@@ -55,7 +54,6 @@ const TemplateWelcome: FC<TemplateWelcomeProps> = ({
 					<DrawerNavigation />
 					<div className={classes.contentContainer}>
 						<Header />
-
 						<Paper elevation={3} className={classes.pageContainer}>
 							<div className={classes.pageContent}>
 								<Component />
