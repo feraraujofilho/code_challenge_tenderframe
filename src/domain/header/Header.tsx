@@ -4,6 +4,8 @@ import { makeStyles, AppBar } from '@material-ui/core'
 
 import { themeValues } from 'app/themes/themeValues'
 
+import Tabs from '../tabs/Tabs'
+
 const useStyles = makeStyles({
 	root: {
 		height: themeValues().sizes.TabHeader.height,
@@ -18,6 +20,7 @@ const Header: FC = () => {
 
 	return (
 		<div className={classes.root}>
+			<Tabs />
 			<AppBar position="static" />
 		</div>
 	)
