@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const TemplateWelcome: FC<TemplateWelcomeProps> = (props: any) => {
 	const classes = useStyles()
-
 	return (
 		<Route
 			render={() => (
