@@ -27,7 +27,6 @@ const TabsWrappedLabel: FC = () => {
 		],
 	}
 
-
 	return (
 		<div>
 			<AppBar position="static">
@@ -37,12 +36,14 @@ const TabsWrappedLabel: FC = () => {
 						<Fragment>
 							<Tabs value={location.pathname}>
 								{allTabs.pages.map(each => {
-									return <Tab
-										label={each.label}
-										value={each.value}
-										component={Link}
-										to={each.value}
-									/>
+									return (
+										<Tab
+											label={each.label}
+											value={each.value}
+											component={Link}
+											to={each.value}
+										/>
+									)
 								})}
 							</Tabs>
 						</Fragment>

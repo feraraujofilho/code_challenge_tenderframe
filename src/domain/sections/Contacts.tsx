@@ -3,7 +3,7 @@ import contacts from '../../seeds/contacts.json'
 
 const Contacts: FC = () => {
 	return (
-		<table style={{width:"100%", textAlign: "center"}}>
+		<table style={{ width: '100%', textAlign: 'center' }}>
 			<tr>
 				<th>Company</th>
 				<th>Email</th>
@@ -12,7 +12,7 @@ const Contacts: FC = () => {
 			{contacts.data.contacts.map(contact => {
 				const { company, email, phone } = contact
 				return (
-					<tr style={{border: "1px solid black"}}>
+					<tr style={{ border: '1px solid black' }}>
 						<td>{company}</td>
 						<td>{email}</td>
 						<td>{phone}</td>
