@@ -18,10 +18,15 @@ import Tab from '@material-ui/core/Tab'
 //	get all tabs and display content accordingly
 
 const TabsWrappedLabel: FC = () => {
-	/* const classes = useStyles()
-	const allTabs = ['/projects', '/offers', '/contacts'] */
+	/* const classes = useStyles() */
+	const allTabs = {
+		pages: [
+			{ label: 'Projects', value: '/projects', page: '/projects' },
+			{ label: 'Offers', value: '/offers', page: '/offers' },
+			{ label: 'Contacts', value: '/contacts', page: '/contacts' },
+		],
+	}
 
-	/* console.log('PROPS', props) */
 
 	return (
 		<div>
@@ -31,24 +36,14 @@ const TabsWrappedLabel: FC = () => {
 					render={({ location }) => (
 						<Fragment>
 							<Tabs value={location.pathname}>
-								<Tab
-									label="Projects"
-									value="/projects"
-									component={Link}
-									to="/projects"
-								/>
-								<Tab
-									label="Offers"
-									value="/offers"
-									component={Link}
-									to="/offers"
-								/>
-								<Tab
-									value="/contacts"
-									label="Contacts"
-									component={Link}
-									to="/contacts"
-								/>
+								{allTabs.pages.map(each => {
+									return <Tab
+										label={each.label}
+										value={each.value}
+										component={Link}
+										to={each.value}
+									/>
+								})}
 							</Tabs>
 						</Fragment>
 					)}

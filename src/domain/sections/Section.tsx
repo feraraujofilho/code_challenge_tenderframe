@@ -1,5 +1,8 @@
 import React, { FC, useState, useEffect } from 'react'
 import { makeStyles, Theme, Typography, Paper } from '@material-ui/core'
+import Offers from './Offers'
+import Projects from './Projects'
+import Contacts from './Contacts'
 
 const useStyles = makeStyles((theme: Theme) => ({
 	root: {
@@ -8,7 +11,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }))
 
 const Section: FC = (props: any) => {
-	//	console.log(props)
+	console.log(props)
 
 	const classes = useStyles()
 	const { root } = classes
@@ -25,9 +28,9 @@ const Section: FC = (props: any) => {
 		<div className={root}>
 			<Paper className={root}>
 				<Typography component="div">
-					{tab === '/offers' && <p>offers</p>}
-					{tab === '/projects' && <p>projects</p>}
-					{tab === '/contacts' && <p>contacts</p>}
+					{tab === '/offers' && <Offers />}
+					{tab === '/projects' && <Projects />}
+					{tab === '/contacts' && <Contacts/>}
 				</Typography>
 			</Paper>
 		</div>

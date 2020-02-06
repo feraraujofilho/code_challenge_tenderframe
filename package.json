@@ -25,7 +25,7 @@
 		"csstype": "^2.6.6",
 		"customize-cra": "^0.5.0",
 		"graphql": "^14.5.8",
-		"graphql-faker": "^2.0.0-rc.13",
+		"graphql-faker": "^2.0.0-rc.17",
 		"graphql-tag": "^2.10.1",
 		"image-webpack-loader": "^6.0.0",
 		"lodash": "^4.17.15",

@@ -1,0 +1,145 @@
+{
+	"data": {
+		"projects": [
+			{
+				"title": "quis sit saepe",
+				"id": "ODEwNjc0NTczMg==",
+				"services": ["Painting", "Windows & Doors"],
+				"offers": [
+					{
+						"company": "Bernier - Casper",
+						"service": "Painting",
+						"price": 669
+					},
+					{
+						"company": "Collins - Bartoletti",
+						"service": "Windows & Doors",
+						"price": 613
+					},
+					{
+						"company": "Raynor and Sons",
+						"service": "Painting",
+						"price": 355
+					},
+					{
+						"company": "Langosh - Kshlerin",
+						"service": "Windows & Doors",
+						"price": 908
+					}
+				]
+			},
+			{
+				"title": "quos distinctio rerum",
+				"id": "NzcwNDMxMTYxMw==",
+				"services": [
+					"Windows & Doors",
+					"Tableware"
+				],
+				"offers": [
+					{
+						"company": "Nikolaus Group",
+						"service": "Outdoors",
+						"price": 793
+					},
+					{
+						"company": "Klein and Sons",
+						"service": "Windows & Doors",
+						"price": 58
+					}
+				]
+			},
+			{
+				"title": "et nostrum delectus",
+				"id": "NTUxNjkyNTQzNQ==",
+				"services": ["Outdoors", "Tableware", "Painting"],
+				"offers": [
+					{
+						"company": "Ullrich, Mills and Muller",
+						"service": "Outdoors",
+						"price": 520
+					},
+					{
+						"company": "Farrell - Homenick",
+						"service": "Painting",
+						"price": 154
+					},
+					{
+						"company": "Lockman Inc",
+						"service": "Painting",
+						"price": 265
+					},
+					{
+						"company": "Zemlak - Mraz",
+						"service": "Tableware",
+						"price": 166
+					}
+				]
+			},
+			{
+				"title": "est ducimus ratione",
+				"id": "MTY5OTQwMTkxNQ==",
+				"services": [
+					"Painting",
+					"Outdoors",
+					"Windows & Doors",
+					"Painting"
+				],
+				"offers": [
+					{
+						"company": "Quitzon - Durgan",
+						"service": "Outdoors",
+						"price": 442
+					},
+					{
+						"company": "Padberg - Schroeder",
+						"service": "Tableware",
+						"price": 26
+					},
+					{
+						"company": "Cronin, Bauch and Wuckert",
+						"service": "Painting",
+						"price": 786
+					}
+				]
+			},
+			{
+				"title": "dicta quas in",
+				"id": "NzM0ODA4MTEyOQ==",
+				"services": [
+					"Outdoors",
+					"Tableware",
+					"Windows & Doors"
+				],
+				"offers": [
+					{
+						"company": "Upton Inc",
+						"service": "Tableware",
+						"price": 645
+					},
+					{
+						"company": "Fadel, Leannon and Frami",
+						"service": "Tableware",
+						"price": 161
+					}
+				]
+			},
+			{
+				"title": "laborum ullam qui",
+				"id": "NDQ5NDgxNDAxNQ==",
+				"services": ["Tableware", "Windows & Doors", "Painting"],
+				"offers": [
+					{
+						"company": "Bahringer - Jacobs",
+						"service": "Tableware",
+						"price": 370
+					},
+					{
+						"company": "Doyle, Rodriguez and Rice",
+						"service": "Tableware",
+						"price": 294
+					}
+				]
+			}
+		]
+	}
+}
