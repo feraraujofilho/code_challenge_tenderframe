@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC } from 'react'
 import { Route, Link } from 'react-router-dom'
 import { makeStyles, withStyles } from '@material-ui/styles'
 import AppBar from '@material-ui/core/AppBar'
@@ -29,7 +29,8 @@ const AntiTabs = withStyles({
 const TabsWrappedLabel: FC = () => {
 	const classes = useStyles()
 	const allTabs = {
-		pages: [{ label: 'Home', value: '/', page: '/' },
+		pages: [
+			{ label: 'Home', value: '/', page: '/' },
 			{ label: 'Projects', value: '/projects', page: '/projects' },
 			{ label: 'Offers', value: '/offers', page: '/offers' },
 			{ label: 'Contacts', value: '/contacts', page: '/contacts' },
@@ -41,13 +42,13 @@ const TabsWrappedLabel: FC = () => {
 			<AppBar position="static">
 				<Route
 					render={({ location }) => (
-						<Fragment>
+						<>
 							<AntiTabs value={location.pathname}>
-								{allTabs.pages.map((each, ind) => {
+								{allTabs.pages.map(each => {
 									return (
 										<Tab
 											className={classes.tabs}
-											key={ind}
+											key={each}
 											label={each.label}
 											value={each.value}
 											component={Link}
@@ -57,7 +58,7 @@ const TabsWrappedLabel: FC = () => {
 									)
 								})}
 							</AntiTabs>
-						</Fragment>
+						</>
 					)}
 				/>
 			</AppBar>

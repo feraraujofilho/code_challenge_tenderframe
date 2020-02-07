@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 	},
 }))
 
-const Section: FC = (props: any) => {
+const Section: FC = () => {
 	const classes = useStyles()
 	const { root } = classes
 
@@ -21,7 +21,8 @@ const Section: FC = (props: any) => {
 			<Paper className={root}>
 				<Typography component="div">
 					<Route
-						exact path="/"
+						exact
+						path="/"
 						render={() => {
 							return <h1>WELCOME TO YOUR DASHBOARD</h1>
 						}}

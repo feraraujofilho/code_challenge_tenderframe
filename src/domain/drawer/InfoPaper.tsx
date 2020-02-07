@@ -37,13 +37,13 @@ const InfoPaper: FC<InfoPaperProps> = () => {
 				information about all the projects you are working on.
 				<br />
 				<br />
-				To see all the projects, go to the tab "Projects"
+				To see all the projects, go to the tab ’Projects’
 				<br />
 				<br />
-				For all the offers received, go to "Offers"
+				For all the offers received, go to ’Offers’
 				<br />
 				<br />
-				To check your contacts list, go to "Contacts"
+				To check your contacts list, go to ’Contacts’
 			</Typography>
 		</Paper>
 	)
