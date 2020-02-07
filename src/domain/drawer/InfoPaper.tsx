@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 	root: {
 		margin: theme.spacing(3.7),
 		width: theme.spacing(30),
-		height: theme.spacing(35),
+		height: theme.spacing(48),
 		background: themeValues().palette.blue.main,
 		color: themeValues().palette.gray.main,
 	},
@@ -33,10 +33,17 @@ const InfoPaper: FC<InfoPaperProps> = () => {
 	return (
 		<Paper className={classes.root}>
 			<Typography className={classes.infoPaper}>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-				voluptas perferendis pariatur rerum voluptatibus voluptatum
-				voluptates consectetur esse porro, asperiores ullam laborum
-				temporibus!
+				This is your personal dashboard where you can find more
+				information about all the projects you are working on.
+				<br />
+				<br />
+				To see all the projects, go to the tab "Projects"
+				<br />
+				<br />
+				For all the offers received, go to "Offers"
+				<br />
+				<br />
+				To check your contacts list, go to "Contacts"
 			</Typography>
 		</Paper>
 	)

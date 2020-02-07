@@ -5,6 +5,7 @@
 				"title": "quis sit saepe",
 				"id": "ODEwNjc0NTczMg==",
 				"services": ["Painting", "Windows & Doors"],
+				"status": "draft",
 				"offers": [
 					{
 						"company": "Bernier - Casper",
@@ -31,10 +32,8 @@
 			{
 				"title": "quos distinctio rerum",
 				"id": "NzcwNDMxMTYxMw==",
-				"services": [
-					"Windows & Doors",
-					"Tableware"
-				],
+				"services": ["Windows & Doors", "Tableware"],
+				"status": ["trendering"],
 				"offers": [
 					{
 						"company": "Nikolaus Group",
@@ -52,6 +51,7 @@
 				"title": "et nostrum delectus",
 				"id": "NTUxNjkyNTQzNQ==",
 				"services": ["Outdoors", "Tableware", "Painting"],
+				"status": ["tendering"],
 				"offers": [
 					{
 						"company": "Ullrich, Mills and Muller",
@@ -84,6 +84,7 @@
 					"Windows & Doors",
 					"Painting"
 				],
+				"status": ["draft"],
 				"offers": [
 					{
 						"company": "Quitzon - Durgan",
@@ -105,11 +106,8 @@
 			{
 				"title": "dicta quas in",
 				"id": "NzM0ODA4MTEyOQ==",
-				"services": [
-					"Outdoors",
-					"Tableware",
-					"Windows & Doors"
-				],
+				"services": ["Outdoors", "Tableware", "Windows & Doors"],
+				"status": ["draft"],
 				"offers": [
 					{
 						"company": "Upton Inc",
@@ -127,6 +125,7 @@
 				"title": "laborum ullam qui",
 				"id": "NDQ5NDgxNDAxNQ==",
 				"services": ["Tableware", "Windows & Doors", "Painting"],
+				"status": ["draft"],
 				"offers": [
 					{
 						"company": "Bahringer - Jacobs",

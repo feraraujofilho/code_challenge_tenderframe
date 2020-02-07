@@ -1,26 +1,35 @@
 import React, { FC, Fragment } from 'react'
 import { Route, Link } from 'react-router-dom'
-/* import { makeStyles } from '@material-ui/styles' */
+import { makeStyles, withStyles } from '@material-ui/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
+import { themeValues } from 'app/themes/themeValues'
 
-/* const useStyles = makeStyles(theme => ({
-	root: {
-		flexGrow: 1,
-		backgroundColor: 'blue',
-	},
+const useStyles = makeStyles(() => ({
 	tabs: {
-		marginTop: "101px"
-	}
-}))  */
+		color: themeValues().palette.blue.main,
+		backgroundColor: 'white',
+		marginTop: '101px',
+		'&:hover': {
+			backgroundColor: 'white',
+		},
+		borderRadius: '10px 10px 0 0',
+	},
+}))
+
+const AntiTabs = withStyles({
+	indicator: {
+		backgroundColor: themeValues().palette.blue.main,
+	},
+})(Tabs)
 
 //	get all tabs and display content accordingly
 
 const TabsWrappedLabel: FC = () => {
-	/* const classes = useStyles() */
+	const classes = useStyles()
 	const allTabs = {
-		pages: [
+		pages: [{ label: 'Home', value: '/', page: '/' },
 			{ label: 'Projects', value: '/projects', page: '/projects' },
 			{ label: 'Offers', value: '/offers', page: '/offers' },
 			{ label: 'Contacts', value: '/contacts', page: '/contacts' },
@@ -31,21 +40,23 @@ const TabsWrappedLabel: FC = () => {
 		<div>
 			<AppBar position="static">
 				<Route
-					path="/"
 					render={({ location }) => (
 						<Fragment>
-							<Tabs value={location.pathname}>
-								{allTabs.pages.map(each => {
+							<AntiTabs value={location.pathname}>
+								{allTabs.pages.map((each, ind) => {
 									return (
 										<Tab
+											className={classes.tabs}
+											key={ind}
 											label={each.label}
 											value={each.value}
 											component={Link}
 											to={each.value}
+											textColor="primary"
 										/>
 									)
 								})}
-							</Tabs>
+							</AntiTabs>
 						</Fragment>
 					)}
 				/>

@@ -1,8 +1,10 @@
-import React, { FC, useState, useEffect } from 'react'
+import React, { FC } from 'react'
 import { makeStyles, Theme, Typography, Paper } from '@material-ui/core'
+import { Route } from 'react-router-dom'
 import Offers from './Offers'
 import Projects from './Projects'
 import Contacts from './Contacts'
+import ProjectDetails from './ProjectDetails'
 
 const useStyles = makeStyles((theme: Theme) => ({
 	root: {
@@ -11,26 +13,28 @@ const useStyles = makeStyles((theme: Theme) => ({
 }))
 
 const Section: FC = (props: any) => {
-	console.log(props)
-
 	const classes = useStyles()
 	const { root } = classes
-
-	const [tab, setTab] = useState('none')
-
-	const { pathname } = props.location
-
-	useEffect(() => {
-		setTab(pathname)
-	}, [pathname, tab])
 
 	return (
 		<div className={root}>
 			<Paper className={root}>
 				<Typography component="div">
-					{tab === '/offers' && <Offers />}
-					{tab === '/projects' && <Projects />}
-					{tab === '/contacts' && <Contacts/>}
+					<Route
+						exact path="/"
+						render={() => {
+							return <h1>WELCOME TO YOUR DASHBOARD</h1>
+						}}
+					/>
+					<Route
+						path="/projects/:id"
+						render={elementProps => {
+							return <ProjectDetails {...elementProps} />
+						}}
+					/>
+					<Route exact path="/offers" component={Offers} />
+					<Route exact path="/projects" component={Projects} />
+					<Route exact path="/contacts" component={Contacts} />
 				</Typography>
 			</Paper>
 		</div>

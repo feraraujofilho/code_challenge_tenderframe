@@ -12,11 +12,12 @@ const Projects: FC = () => {
 					<Link
 						to={`/projects/${val.id}`}
 						style={{ textDecoration: 'none', color: 'black' }}
+						key={val.id}
 					>
 						<h1>{val.title}</h1>
 						<ul>
-							{val.services.map(service => {
-								return <li>{service}</li>
+							{val.services.map((service,ind) => {
+								return <li key={service+ind}>{service}</li>
 							})}
 						</ul>
 						<hr />
