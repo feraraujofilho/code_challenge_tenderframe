@@ -48,7 +48,7 @@ const TabsWrappedLabel: FC = () => {
 									return (
 										<Tab
 											className={classes.tabs}
-											key={each}
+											key={each.value}
 											label={each.label}
 											value={each.value}
 											component={Link}

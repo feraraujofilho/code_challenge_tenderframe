@@ -9,27 +9,25 @@ const ProjectDetails: FC<RouteComponentProps> = (props: any) => {
 	const [status, setStatus] = React.useState('')
 	const [showForm, setShowForm] = React.useState(false)
 
-	const handleClick = (): boolean => {
+	const handleClick = () => {
 		setShowForm(!showForm)
-		return false
 	}
 
-	useEffect((): boolean => {
-		function getProject(): boolean {
+	useEffect(() => {
+		function getProject() {
 			const projectSource = list.data.projects.find(
 				single => single.id === props.match.params.id
 			)
 			setProject(projectSource)
-			return false
 		}
 		getProject()
 		if (project) {
 			setStatus(project.status)
 		}
-		return false
+	
 	}, [project, props.match.params])
 
-	const handleChange = (event: any): boolean => {
+	const handleChange = (event: any) => {
 		/* 
 		const editUserProfile = (_id, userInfos) => {
   		return axios

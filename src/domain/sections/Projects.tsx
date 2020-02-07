@@ -17,7 +17,7 @@ const Projects: FC = () => {
 						<h1>{val.title}</h1>
 						<ul>
 							{val.services.map(service => {
-								return <li key={service + val.id}>{service}</li>
+								return <li key={service+val.id}>{service}</li>
 							})}
 						</ul>
 						<hr />
