@@ -24,7 +24,6 @@ const ProjectDetails: FC<RouteComponentProps> = (props: any) => {
 		if (project) {
 			setStatus(project.status)
 		}
-	
 	}, [project, props.match.params])
 
 	const handleChange = (event: any) => {
